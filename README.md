@@ -6,6 +6,7 @@ The game draws a maze on the TFT GLCD, moves Pac-Man and a ghost in real time, h
 
 The project is written entirely in **C + ARM assembly (startup)** and runs **without an operating system**, directly on the microcontroller.
 
+
 ---
 
 ## Features
@@ -14,6 +15,7 @@ The project is written entirely in **C + ARM assembly (startup)** and runs **wit
   - Pac-Man moves continuously in the last chosen direction.
   - Pills on the map, score tracking, remaining lives, and a game timer.
   - Ghost movement handled by dedicated logic in `ghost.c`.
+  - he ghost uses **BFS pathfinding** on the tile map to find the *shortest path* toward Pac-Man
 - **Real-time game loop via interrupts**
   - Multiple hardware timers (Timer0, Timer1, Timer2, Timer3) for:
     - Game countdown and ghost mode transitions.
