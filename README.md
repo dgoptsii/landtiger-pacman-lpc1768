@@ -15,7 +15,7 @@ The project is written entirely in **C + ARM assembly (startup)** and runs **wit
   - Pills on the map, score tracking, remaining lives, and a game timer.
   - Ghost movement handled by dedicated logic in `ghost.c`.
 - **Real-time game loop via interrupts**
-  - Multiple hardware **timers** (Timer0, Timer1, Timer2, Timer3) for:
+  - Multiple hardware timers (Timer0, Timer1, Timer2, Timer3) for:
     - Game countdown and ghost mode transitions.
     - Pac-Man / ghost movement updates.
     - DAC waveform output for audio.
@@ -26,8 +26,8 @@ The project is written entirely in **C + ARM assembly (startup)** and runs **wit
   - Font support via `AsciiLib`.
   - Optional frequency display / debug graphics via `HzLib`.
 - **Input**
-  - On-board **joystick** for Pac-Man direction control.
-  - On-board **buttons** for actions like pause/resume.
+  - On-board joystick for Pac-Man direction control.
+  - On-board buttons for actions like pause/resume.
   - **ADC** (P1.31 / AD0.5) for analog input (e.g., controlling sound / LED bargraph).
   - Optional **touch panel** input via ADS7843 on SSP1 with calibration.
 - **Audio and music**
@@ -54,6 +54,6 @@ The project is written entirely in **C + ARM assembly (startup)** and runs **wit
   - SSP1 (for touch controller ADS7843, optional)
 - **Toolchain / IDE:**
   - Any ARM toolchain supporting LPC1768 + CMSIS.
-  - Typical setup: **Keil MDK-ARM**, **IAR**, or **arm-none-eabi-gcc** with appropriate startup and linker scripts.
+  - Typical setup: Keil MDK-ARM, IAR, or arm-none-eabi-gcc with appropriate startup and linker scripts.
 
 ---
