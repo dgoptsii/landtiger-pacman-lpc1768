@@ -28,8 +28,8 @@ The project is written entirely in **C + ARM assembly (startup)** and runs **wit
 - **Input**
   - On-board joystick for Pac-Man direction control.
   - On-board buttons for actions like pause/resume.
-  - **ADC** (P1.31 / AD0.5) for analog input (e.g., controlling sound / LED bargraph).
-  - Optional **touch panel** input via ADS7843 on SSP1 with calibration.
+  - ADC (P1.31 / AD0.5) for analog input (e.g., controlling sound / LED bargraph).
+  - Optional touch panel input via ADS7843 on SSP1 with calibration.
 - **Audio and music**
   - DAC output driven by a sine lookup table and timers.
   - Simple music system with a `NOTE` struct and predefined melodies (play/win/lose themes).
